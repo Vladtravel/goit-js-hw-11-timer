@@ -27,7 +27,7 @@ class CountdownTimer {
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('May 17, 2028'),
+  targetDate: new Date('May 17, 2029'),
 });
 
 timer.start();
