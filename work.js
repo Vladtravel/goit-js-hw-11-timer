@@ -13,13 +13,19 @@ class CountdownTimer {
       const deltaTime = startTime - currentTime;
 
       const { days, hours, mins, secs } = getTimeComponents(deltaTime);
-      const day = document.querySelector('#timer-1 [data-value="days"]');
+
+      const timer1 = document.querySelector('#timer-1');
+
+      const day = timer1.querySelector('[data-value="days"]');
       day.textContent = days;
-      const hour = document.querySelector('#timer-1 [data-value="hours"]');
+
+      const hour = timer1.querySelector('[data-value="hours"]');
       hour.textContent = hours;
-      const min = document.querySelector('#timer-1 [data-value="mins"]');
+
+      const min = timer1.querySelector('[data-value="mins"]');
       min.textContent = mins;
-      const sec = document.querySelector('#timer-1 [data-value="secs"]');
+
+      const sec = timer1.querySelector('[data-value="secs"]');
       sec.textContent = secs;
     }, 1000);
   }
